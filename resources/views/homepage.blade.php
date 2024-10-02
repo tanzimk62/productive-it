@@ -17,7 +17,7 @@
               <label for="username-register" class="text-muted mb-1"><small>Username</small></label>
               <input name="username" id="username-register" class="form-control" type="text" placeholder="Pick a username" autocomplete="off" value="{{old('username')}}"/>
               @error('username')
-              <p class="text-danger">{{$message}}</p>
+              <p class="m-0 small alert alert-danger shadow-sm">{{$message}}</p>
               @enderror
             </div>
 
@@ -25,7 +25,7 @@
               <label for="email-register" class="text-muted mb-1"><small>Email</small></label>
               <input name="email" id="email-register" class="form-control" type="text" placeholder="you@example.com" autocomplete="off" value="{{old('email')}}"/>
               @error('email')
-              <p class="text-danger">{{$message}}</p>
+              <p class="m-0 small alert alert-danger shadow-sm">{{$message}}</p>
               @enderror
             </div>
 
@@ -33,7 +33,7 @@
               <label for="password-register" class="text-muted mb-1"><small>Password</small></label>
               <input name="password" id="password-register" class="form-control" type="password" placeholder="Create a password" value="{{old('password')}}"/>
               @error('password')
-              <p class="text-danger">{{$message}}</p>
+              <p class="m-0 small alert alert-danger shadow-sm">{{$message}}</p>
               @enderror
             </div>
 
@@ -41,7 +41,11 @@
               <label for="password-register-confirm" class="text-muted mb-1"><small>Confirm Password</small></label>
               <input name="password_confirmation" id="password-register-confirm" class="form-control" type="password" placeholder="Confirm password" value="{{old('password_confirmation')}}"/>
               @error('password_confirmation')
+
+              <p class="m-0 small alert alert-danger shadow-sm">{{$message}}</p>
+
               <p class="text-danger">{{$message}}</p>
+
               @enderror
             </div>
 
